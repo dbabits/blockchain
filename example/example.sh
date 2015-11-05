@@ -295,7 +295,7 @@ echo ""
 # because BYTECODE contains additional code for the actual deployment (the init/constructor sequence of a contract)
 # so we only ensure that BYTECODE contains CODE
 if [[ "$BYTECODE" == *"$CODE"* ]]; then
-	echo 'THE CODE WAS DEPLOYED CORRECTLY!' #dmitry:don't used " with !: my bash doesnt like it: -bash: !": event not found
+	echo 'THE CODE WAS DEPLOYED CORRECTLY!' #dmitry:don't use " with !: my bash doesnt like it: -bash: !": event not found
 else
 	echo 'THE CODE AT THE CONTRACT ADDRESS IS NOT WHAT WE DEPLOYED!'
 	echo "Deployed: $BYTECODE"
@@ -356,7 +356,7 @@ if [[ "$SUM_GOT" != "$SUM_EXPECTED" ]]; then
 	echo "GOT $SUM_GOT"
 	echo "EXPECTED $SUM_EXPECTED"
 else
-	echo 'SMART CONTRACT ADDITION TX SUCCEEDED!' #dmitry:don't used " with !: my bash doesnt like it: -bash: !": event not found
+	echo 'SMART CONTRACT ADDITION TX SUCCEEDED!' #dmitry:don't use " with !: my bash doesnt like it: -bash: !": event not found
 	echo "$ARG1 + $ARG2 = $SUM_GOT"
 fi
 echo ""
